@@ -1,0 +1,31 @@
+OUTPUT_ARCH( "riscv" )
+ENTRY( _entry )
+SECTIONS
+{
+  /* text: test code section */
+  . = 0x80200000;
+  start = .;
+
+  .text : {
+     stext = .;
+        *(.text.entry)
+        *(.text .text.*)
+        . = ALIGN(4K);
+        etext = .;
+  }
+
+  .data : {
+        sdata = .;
+        *(.data .data.*)
+        edata = .;
+  }
+
+  PROVIDE(edata = .);
+
+  .bss : {
+        sbss = .;
+        *(.bss .bss.*)
+        ebss = .;
+  }
+  PROVIDE(end = .);
+}

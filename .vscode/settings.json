@@ -1,0 +1,21 @@
+{
+    "files.associations": {
+        "addr.h": "c",
+        "alloc.h": "c",
+        "array": "c",
+        "memory": "c",
+        "functional": "c",
+        "tuple": "c",
+        "utility": "c",
+        "cstdlib": "c",
+        "*.tcc": "c",
+        "init.h": "c",
+        "mem.h": "c",
+        "clock.h": "c",
+        "stdarg.h": "c",
+        "sbi.h": "c",
+        "stdio.h": "c",
+        "trap.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}

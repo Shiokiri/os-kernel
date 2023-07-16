@@ -1,0 +1,1 @@
+int kern_init(void);
